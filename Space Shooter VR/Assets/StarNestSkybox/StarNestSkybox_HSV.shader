@@ -1,3 +1,5 @@
+// Upgrade NOTE: replaced '_Object2World' with 'unity_ObjectToWorld'
+
 //Star Nest algorithm by Pablo Román Andrioli
 //Unity 5.x shader by Jonathan Cohen
 //This content is under the MIT License.
@@ -117,7 +119,7 @@ Shader "Skybox/StarNestHue" {
 				float3 cameraPos = float3(0,kInnerRadius + kCameraHeight,0); 	// The camera's current position
 			
 				// Get the ray from the camera to the vertex and its length (which is the far point of the ray passing through the atmosphere)
-				float3 eyeRay = normalize(mul((float3x3)_Object2World, v.vertex.xyz));
+				float3 eyeRay = normalize(mul((float3x3)unity_ObjectToWorld, v.vertex.xyz));
 
 				OUT.rayDir = half3(eyeRay);
 				

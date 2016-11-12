@@ -74,9 +74,6 @@
  <Reference Include="websocket-sharp">
  <HintPath>/Users/AidanForrester/Desktop/VR-Space-Shooter/Space Shooter VR/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
  </Reference>
- <Reference Include="websocket-sharp">
- <HintPath>/Users/frank/Desktop/Github/VR-Space-Shooter/Space Shooter VR/Assets/Plugins/WebSocket/websocket-sharp.dll</HintPath>
- </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
